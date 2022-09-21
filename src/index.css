@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(245, 238, 248, 0.5);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.app__header {
+  padding-bottom: 100px;
+}
+
+.main__calculator {
+  max-width: 420px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-primary {
+  background-color: #BB8FCE;
+  border-color: #BB8FCE;
+}
+
+.btn-primary:hover {
+  background-color: #A569BD;
+  border-color: #A569BD;
 }
