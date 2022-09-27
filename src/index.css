@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(245, 238, 248, 0.5);
+  background-color: rgb(235, 245, 251, 0.5);
 }
 
 .main__container {
@@ -25,14 +25,4 @@ body {
   max-width: 420px;
   display: flex;
   justify-content: flex-start;
-}
-
-.btn-primary {
-  background-color: #BB8FCE;
-  border-color: #BB8FCE;
-}
-
-.btn-primary:hover {
-  background-color: #A569BD;
-  border-color: #A569BD;
 }
