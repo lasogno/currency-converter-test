@@ -1,7 +1,10 @@
 import './App.css';
 import NavBar from './Navbar';
 import ActiveCurrency from './ActiveCurrency';
+import Calculate from './Calculator';
+import Courses from './Courses';
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 function App() {
 const [currency, setCurrency] = React.useState('RUB');
@@ -12,7 +15,11 @@ const [currency, setCurrency] = React.useState('RUB');
         <NavBar />
       </header>
       <main className='main'>
-        <ActiveCurrency value={currency} changeBaseCurrency={setCurrency}/>
+      <Container className='main__container mb-3'>
+        <ActiveCurrency value={currency} changeBaseCurrency={setCurrency} className="mb-3"/>
+        <Courses value={currency}/>
+        <Calculate/>
+        </Container>
       </main>
     </>
   );
