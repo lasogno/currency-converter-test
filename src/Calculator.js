@@ -58,7 +58,7 @@ function Calculate() {
   const resultField = () => {
     switch(state) {
       case 'success':
-        return `Результат: ${15} ${from} = ${Math.floor(result * 1000) / 1000} ${to}`;
+        return `Результат: ${sum} ${from} = ${Math.floor(result * 1000) / 1000} ${to}`;
       case 'warning':
         return 'Введите значения валют';
       case 'danger':
@@ -79,7 +79,7 @@ function Calculate() {
           </Form.Text>
         </Form.Group>
         <Button variant="primary" type="submit">
-          Submit
+          Посчитать
         </Button>
         <div>
           <p className='mt-5'>{`Введенная сумма: ${sum} `}</p>
